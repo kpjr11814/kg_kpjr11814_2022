@@ -10,11 +10,13 @@ function phonetic(num){
   return numPhonetic;
 }
 
+/*---------Program Starts Here-----------*/
+
 var phoneticNums = ""
 for (var i = 2; i < process.argv.length; i++){
-  phoneticNums += phonetic(process.argv[i]) + ', ';
+  phoneticNums += phonetic(process.argv[i]) + ',';
 }
 
-phoneticNums = phoneticNums.substring(0, phoneticNums.length - 2);
+phoneticNums = phoneticNums.substring(0, phoneticNums.length - 1);
 console.log(phoneticNums)
 
